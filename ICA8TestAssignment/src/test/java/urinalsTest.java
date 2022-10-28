@@ -7,6 +7,6 @@ public class urinalsTest {
     void main() {
         System.out.println("===Vishwanath Reddy Yasa====");
         System.out.println("====FIRST TEST EXECUTED====");
-        Assertions.assertEquals(true, v.goodString("vyasa") );
+        Assertions.assertEquals(-1, v.vacantUrinals("011"));
     }
 }

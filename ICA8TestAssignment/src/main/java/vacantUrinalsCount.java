@@ -1,6 +1,11 @@
+import java.util.Arrays;
+
 public class vacantUrinalsCount {
-    Boolean goodString( String str ) {  // checks to see if valid string
-        System.out.println("Not yet implemented");
-        return true;
+    void getString(){}
+    void openFile(){}
+    int vacantUrinals( String str ) {
+        boolean vacant_urinal = str.contains("11");
+
+     return 0;
     }
 }

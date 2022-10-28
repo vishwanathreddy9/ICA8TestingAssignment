@@ -5,3 +5,5 @@ The challenge is to determine the maximum number of urinals in a men's restroom 
 For development, Urinals.java, vacantUrinalsCount.java and UrinalsTest.java were created.
 The input list of urinal sets is contained in string format in the urinals.dat file.
 The output is in rule.txt. rule1.txt, rule2.txt so on ....
+
+Github link https://github.com/vishwanathreddy9/ICA8TestingAssignment

@@ -3,10 +3,18 @@
  * Vishwanath Reddy Yasa
  **/
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class vacantUrinalsCount {
     void getString(){}
     void openFile(){}
+    public boolean validateInput(String s){
+        Pattern p = Pattern.compile("^[0-1]*$");
+        Matcher m = p.matcher(s);
+        return m.find();
+
+    }
     int vacantUrinals( String str ) {
         boolean vacant_urinal = str.contains("11");
         if(vacant_urinal){

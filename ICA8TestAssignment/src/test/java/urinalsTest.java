@@ -50,11 +50,11 @@ public class urinalsTest {
     @Test
     void string_is_valid(){
         System.out.println("====EIGHTH TEST EXECUTED====");
-        Assertions.assertEquals(true, v.vacantUrinals("01000"));
+        Assertions.assertEquals(true, v.validateInput("01000"));
     }
     @Test
     void string_is_invalid(){
         System.out.println("====NINTH TEST EXECUTED====");
-        Assertions.assertEquals(false, v.vacantUrinals("010AA"));
+        Assertions.assertEquals(false, v.validateInput("010AA"));
     }
 }

@@ -1,3 +1,7 @@
+/**
+ * @Author
+ * Vishwanath Reddy Yasa
+ **/
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -41,5 +45,16 @@ public class urinalsTest {
         System.out.println("====SEVENTH TEST EXECUTED====");
         Assertions.assertEquals(1, v.vacantUrinals("01000"));
 
+    }
+
+    @Test
+    void string_is_valid(){
+        System.out.println("====EIGHTH TEST EXECUTED====");
+        Assertions.assertEquals(true, v.vacantUrinals("01000"));
+    }
+    @Test
+    void string_is_invalid(){
+        System.out.println("====NINTH TEST EXECUTED====");
+        Assertions.assertEquals(false, v.vacantUrinals("010AA"));
     }
 }

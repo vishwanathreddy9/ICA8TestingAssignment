@@ -1,3 +1,7 @@
+/**
+ * @Author
+ * Vishwanath Reddy Yasa
+ **/
 import java.util.Arrays;
 
 public class vacantUrinalsCount {

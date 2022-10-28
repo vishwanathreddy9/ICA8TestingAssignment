@@ -5,6 +5,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class urinalsTest {
     vacantUrinalsCount v = new vacantUrinalsCount();
     @Test
@@ -50,11 +53,20 @@ public class urinalsTest {
     @Test
     void string_is_valid(){
         System.out.println("====EIGHTH TEST EXECUTED====");
-        Assertions.assertEquals(true, v.validateInput("01000"));
+        Assertions.assertEquals(true, v.goodString("01000"));
     }
     @Test
     void string_is_invalid(){
         System.out.println("====NINTH TEST EXECUTED====");
-        Assertions.assertEquals(false, v.validateInput("010AA"));
+        Assertions.assertEquals(false, v.goodString("010AA"));
     }
+    @Test
+    void read_From_File() {
+        System.out.println(" ====TENTH TEST EXECUTED==== ");
+        String Path = "urinal";
+        Assertions.assertThrows(IOException.class, () -> {
+            v.readFile(Path);
+        });
+    }
+
 }

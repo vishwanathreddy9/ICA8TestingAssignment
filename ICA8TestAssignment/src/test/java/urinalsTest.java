@@ -16,5 +16,7 @@ public class urinalsTest {
         Assertions.assertEquals(1, v.vacantUrinals("10001"));
         System.out.println("====FIFTH TEST EXECUTED====");
         Assertions.assertEquals(0, v.vacantUrinals("1001"));
-    }
+        System.out.println("====SIXTH TEST EXECUTED====");
+        Assertions.assertEquals(3, v.vacantUrinals("00000"));
+      }
 }

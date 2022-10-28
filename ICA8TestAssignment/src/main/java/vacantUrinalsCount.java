@@ -34,7 +34,6 @@ public class vacantUrinalsCount {
                 }
             }
         }
-
         return (int) Arrays.stream(Array).filter(x -> x == 1).count() - initialCount;
     }
 }

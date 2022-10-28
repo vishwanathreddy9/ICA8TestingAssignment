@@ -28,6 +28,11 @@ public class vacantUrinalsCount {
                     Array[i] = 1;
                 }
             }
+            else {
+                if (urinal == 0 && Array[i - 1] == 0 && Array[i + 1] == 0) {
+                    Array[i] = 1;
+                }
+            }
         }
 
         return (int) Arrays.stream(Array).filter(x -> x == 1).count() - initialCount;
